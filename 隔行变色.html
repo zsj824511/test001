@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+//        入口函数
+//        $(function(){
+////            注册点击事件
+//            $("#btn").click(function(){
+////                 奇数行
+//                $("#uu>li:odd").css("backgroundColor","red");
+////                 偶数行
+//                $("#uu>li:even").css("backgroundColor","yellow");
+//            })
+//        })
+
+//        第二遍
+        $(function(){
+//            注册点击事件
+            $("#btn").click(function(){
+//                奇数行
+                $("#uu>li:odd").css("backgroundColor","yellow");
+//                  偶数行
+                $("#uu>li:even").css("backgroundColor","red");
+            });
+        });
+//        第三遍
+//        入口函数
+        $(function(){
+//            点击事件
+            $("#btn").click(function(){
+//                奇数行
+                $("#uu>li:odd").css("backgroundColor","yellow");
+                $("#uu>li:even").css("backgroundColor","red");
+            });
+        });
+
+    </script>
+</head>
+<body>
+<input type="button" value="隔行变色" id="btn"/>
+<ul id="uu">
+    <li>乔峰:降龙十八摸</li>
+    <li>张无忌:乾坤大摸姨</li>
+    <li>段誉:鳞波微步</li>
+    <li>丁棚:天外流星贱</li>
+    <li>张三丰:太极掌</li>
+    <li>段飞:极乐神功</li>
+    <li>云飞扬:天馋功</li>
+    <li>杨过:黯然销魂掌</li>
+    <li>那谁谁:如来神掌</li>
+    <li>孟星魂:流星蝴蝶剑</li>
+    <li>楠哥:少女萌萌拳</li>
+</ul>
+</body>
+</html>

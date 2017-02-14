@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        ul {
+            list-style: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        div {
+            width: 1150px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        div li {
+            width: 240px;
+            height: 400px;
+            float: left;
+        }
+
+        div ul {
+            width: 1300px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script src="jquery-1.12.2.min.js"></script>
+<script>
+    //获取box中的ul中的所有的li
+    $(function(){
+        $("#box>ul>li").mouseover(function(){
+            var index=$(this).index()+1;
+            $("#box>ul>li").attr("src","images/"+index+".jpg");
+            $(this).show();
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+//        入口函数
+        $(function(){
+//            点击事件
+            $("#btn").click(function(){
+//                   索引大于四的
+                $("#uu>li:gt(4)").css("backgroundColor","red");
+//                   索引的于四的
+                $("#uu>li:eq(4)").css("backgroundColor","yellow");
+//                   索引小于四的
+                $("#uu>li:lt(4)").css("backgroundColor","green");
+            });
+        });
+
+//        第二遍
+//        入口函数
+         $(function(){
+//            点击事件
+             $("#btn").click(function(){
+//                   索引大于四的
+                 $("#uu>li:gt(4)").css("backgroundColor","red");
+//                            索引的于四的
+                 $("#uu>li:eq(4)").css("backgroundColor","yellow");
+//                            索引小于四的
+                 $("#uu>li:lt(4)").css("backgroundColor","green");
+             });
+         });
+
+//         第三遍
+//        入口函数
+          $(function(){
+//               点击事件
+               $("#btn").click(function(){
+//                   索引大于四的
+                  $("#uu>li:gt(4)").css("backgroundColor","red");
+//                   索引的于四的
+                  $("#uu>li:eq(4)").css("backgroundColor","yellow");
+//                   索引小于四的
+                  $("#uu>li:lt(4)").css("backgroundColor","green");
+               });
+          });
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="显示效果">
+<ul id="uu">
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+    <li>美女</li>
+</ul>
+
+</body>
+</html>

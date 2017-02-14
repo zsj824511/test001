@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            cursor: pointer;
+        }
+    </style>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+//        入口函数
+        $(function(){
+//             鼠标进入
+            $("#uu>li").mouseover(function(){
+                $(this).css("backgroundColor","red");
+            });
+//            鼠标离开
+            $("#uu>li").mouseout(function(){
+                $("#uu>li").css("backgroundColor","");
+            });
+        });
+
+//        第二遍
+//          入口函数
+        $(function(){
+//            鼠标进入事件
+            $("#uu>li").mouseover(function(){
+                $(this).css("backgroundColor","red");
+            });
+//            鼠标离开事件
+            $("#uu>li").mouseout(function(){
+                $("#uu>li").css("backgroundColor","");
+            });
+        });
+
+//        第三遍
+//        入口函数
+         $(function(){
+//             鼠标进入事件
+             $("#uu>li").mouseover(function(){
+                 $(this).css("backgroundColoer","red");
+             });
+//                鼠标离开
+             $("#uu>li").mouseout(function(){
+                 $("#uu>li").css("backgroundColor","");
+             })
+         })
+    </script>
+</head>
+<body>
+<ul id="uu">
+    <li>火箭</li>
+    <li>马刺</li>
+    <li>湖人</li>
+    <li>骑士</li>
+    <li>公牛</li>
+    <li>小牛</li>
+    <li>老牛</li>
+    <li>母牛</li>
+    <li>奶牛</li>
+</ul>
+</body>
+</html>
